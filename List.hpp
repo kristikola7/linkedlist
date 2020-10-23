@@ -15,8 +15,7 @@ private:
 
 	nodePtr head, curr, temp;
 
-public:
-	
+public:	
 	List()
 	{
 		head = NULL;
