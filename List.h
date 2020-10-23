@@ -10,7 +10,7 @@ extern "C" {
 
 	/* A wrapper for a C++ Cube object pointer */
 	typedef struct {
-		int obj;
+		void* obj;
 	} list_t;
 
 	void AddNode_C(const list_t c, int addData_C);
