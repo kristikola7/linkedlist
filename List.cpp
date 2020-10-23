@@ -3,13 +3,7 @@
 #include "List.hpp"
 #include "List.h"
 
-//List::List(int data) : m_data(data) {}
-//
-//int List::data() const {
-//	return m_data;
-//}
-
-void List::AddNode(int addData) 
+void List::AddNode(int addData) //Add a Node to the list
 {
 	nodePtr n = new node;
 	n->next = NULL;
@@ -31,7 +25,7 @@ void List::AddNode(int addData)
 	}
 }
 
-void List::DeleteNode(int delData) 
+void List::DeleteNode(int delData) //Delete a Node
 {
 	nodePtr delPtr = NULL;
 	temp = head;
@@ -63,7 +57,7 @@ void List::DeleteNode(int delData)
 	}
 }
 
-void List::PrintList()
+void List::PrintList() //Print the elements of the list
 {
 	curr = head;
 
@@ -74,7 +68,7 @@ void List::PrintList()
 	}
 }
 
-extern "C"
+extern "C" //C wrappers 
 {
 	void AddNode_C(const list_t c, int addData_C)
 	{
